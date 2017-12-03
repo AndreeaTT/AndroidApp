@@ -2,10 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/addOfferId"
-        android:title="@string/add_offer">
+        android:title="@string/add_offer"
+        android:onClick="onOptionsItemSelected">
     </item>
     <item
         android:id="@+id/removeOfferId"
-        android:title="@string/remove_offer">
+        android:title="@string/remove_offer"
+        android:onClick="onOptionsItemSelected">
+    </item>
+    <item
+        android:id="@+id/clear"
+        android:title="@string/reset"
+        android:onClick="onOptionsItemSelected">
+    </item>
+    <item
+        android:id="@+id/favourite"
+        android:onClick="onOptionsItemSelected"
+        android:title="@string/clear_favour">
     </item>
 </menu>

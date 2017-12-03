@@ -15,10 +15,29 @@ import java.util.List;
  * Created by AndreeaT on 11/26/2017.
  */
 
-public class MyAdapter extends ArrayAdapter {
+public class MyAdapter extends ArrayAdapter<Excursie> {
+
+    private final List<Excursie> items;
 
     public MyAdapter(Context context, List<Excursie> items) {
         super(context, 0, items);
+        this.items = items;
+    }
+
+    public List<Excursie> getItems() {
+        return items;
+    }
+
+    public void clearFavourite(){
+        for (Excursie ex:items) {
+            ex.setFavourite(false);
+        }
+    }
+
+    public void setFavorite(int id, Boolean status){
+        Excursie ex = items.get(id);
+        ex.setFavourite(status);
+        items.set(id, ex);
     }
 
     @Override

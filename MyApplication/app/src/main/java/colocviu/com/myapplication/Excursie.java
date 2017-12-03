@@ -1,15 +1,18 @@
 package colocviu.com.myapplication;
 
+import java.io.Serializable;
+
 /**
  * Created by AndreeaT on 11/26/2017.
  */
 
-public class Excursie {
+public class Excursie implements Serializable {
 
     private String title;
     private String description;
     private String image;
     private String price;
+    private Boolean favourite;
 
     public Excursie(){
 
@@ -20,6 +23,7 @@ public class Excursie {
         this.description = description;
         this.image = image;
         this.price = price;
+        this.favourite = false;
     }
 
     public String getTitle() {
@@ -52,5 +56,13 @@ public class Excursie {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public Boolean getFavourite() {
+        return favourite;
+    }
+
+    public void setFavourite(Boolean favourite) {
+        this.favourite = favourite;
     }
 }

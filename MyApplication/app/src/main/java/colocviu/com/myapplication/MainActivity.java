@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_main);
     }
 
     public void SignInClick(View view){
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
                         startActivity(intent);
                     }
-                }, 5000);
+                }, 500);
             } else
             {
                 button_message.setText("Login failed. Username or password are inccorect!");

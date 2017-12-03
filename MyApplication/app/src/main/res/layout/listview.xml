@@ -14,5 +14,6 @@
         android:id="@+id/excursionsList"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:choiceMode="singleChoice" />
+        android:choiceMode="singleChoice"
+        android:longClickable="true"/>
 </RelativeLayout>
