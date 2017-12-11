@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/addOfferId"
+        android:id="@+id/clear"
         android:title="@string/reset"
-        android:onClick="clearItemList">
+        android:onClick="onOptionsItemSelected">
     </item>
     <item
-        android:id="@+id/removeOfferId"
-        android:onClick="addToFavourite"
-        android:title="@string/add_favour">
+        android:id="@+id/favourite"
+        android:onClick="onOptionsItemSelected"
+        android:title="@string/clear_favour">
+    </item>
+    <item
+        android:id="@+id/chat"
+        android:onClick="onOptionsItemSelected"
+        android:title="@string/chat">
     </item>
 </menu>

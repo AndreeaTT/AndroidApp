@@ -1,8 +1,10 @@
 package colocviu.com.myapplication;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -124,6 +126,14 @@ public class ListViewActivity extends AppCompatActivity {
             Toast.makeText(this,	"Remove favourite elements",	Toast.LENGTH_SHORT).show();
         }
 
+        if (id == R.id.chat){
+            SharedPreferences pref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+            String username = pref.getString("username", "");
+
+            Intent intent	=	new	Intent(ListViewActivity.this,	ChatActivity.class);
+            intent.putExtra("username",	username);
+            startActivityForResult(intent, 1);
+        }
         return	super.onOptionsItemSelected(item);
     }
 
@@ -134,6 +144,10 @@ public class ListViewActivity extends AppCompatActivity {
                 .setPositiveButton("Confirrm", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        SharedPreferences pref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor edit = pref.edit();
+                        edit.remove("username");
+                        edit.commit();
                         Intent intent = new Intent(ListViewActivity.this, MainActivity.class);
                         startActivity(intent);
                     }

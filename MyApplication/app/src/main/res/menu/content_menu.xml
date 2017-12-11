@@ -10,14 +10,4 @@
         android:title="@string/remove_offer"
         android:onClick="onOptionsItemSelected">
     </item>
-    <item
-        android:id="@+id/clear"
-        android:title="@string/reset"
-        android:onClick="onOptionsItemSelected">
-    </item>
-    <item
-        android:id="@+id/favourite"
-        android:onClick="onOptionsItemSelected"
-        android:title="@string/clear_favour">
-    </item>
 </menu>

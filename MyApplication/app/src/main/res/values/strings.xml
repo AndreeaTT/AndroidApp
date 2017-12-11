@@ -15,4 +15,9 @@
     <string name="reset">Reset list</string>
     <string name="add_favour">Add to favourite</string>
     <string name="remove_favour">Remove from favourite</string>
+    <string name="chat">Chat with us</string>
+    <string name="dsg1">Design 1</string>
+    <string name="dsg2">Design 2</string>
+    <string name="bothdsg">Both designs</string>
+    <string name="calatour">CalaTourApp</string>
 </resources>
