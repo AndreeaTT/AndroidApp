@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addOfferId"
+        android:title="@string/add_offer"
+        android:onClick="onOptionsItemSelected">
+    </item>
+    <item
+        android:id="@+id/removeOfferId"
+        android:title="@string/remove_offer"
+        android:onClick="onOptionsItemSelected">
+    </item>
+</menu>

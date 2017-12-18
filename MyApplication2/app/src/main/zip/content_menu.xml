@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addOfferId"
+        android:title="@string/add_offer"
+        android:onClick="onOptionsItemSelected">
+    </item>
+    <item
+        android:id="@+id/removeOfferId"
+        android:title="@string/remove_offer"
+        android:onClick="onOptionsItemSelected">
+    </item>
+    <item
+        android:id="@+id/clear"
+        android:title="@string/reset"
+        android:onClick="onOptionsItemSelected">
+    </item>
+    <item
+        android:id="@+id/favourite"
+        android:onClick="onOptionsItemSelected"
+        android:title="@string/favourite">
+    </item>
+</menu>

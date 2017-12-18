@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/exTitle1"
+        android:layout_marginTop = "70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/exPrice"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/exTitle"
+        android:textColor="@color/colorBlack"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/exImage1"
+        android:layout_marginTop="20dp"
+        android:layout_width="@dimen/excursion_img_width"
+        android:layout_height="@dimen/excursion_img_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exTitle1"
+        android:scaleType="fitXY"
+        android:src="@drawable/offer_1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/exImage1"
+        android:text=""
+        android:height="250dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="25dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/exPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorWhite"
+        android:text="" />
+
+</RelativeLayout>
